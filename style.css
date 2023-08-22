@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 228, 239);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+h1{
+    color:black;
+    font-size:3rem;
+    font-weight: 800;
+    opacity: .8;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+    text-shadow: #098ce3;
+}
+.container{
+    width:45%;
+    padding:1rem;
+    margin: 0rem auto;
+    background-color:rgb(73, 11, 232);
+    border-radius: 10px;
+    
+}
+.display{
+    width:90%;
+    margin: 1rem auto;
+    height:4.5rem;
+    overflow:auto;
+    font-size:20px;
+    text-align:end;
+    padding:5px 5px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    
+}
+.tab{
+    display:grid;
+    width:90%;
+    margin: 0 auto;
+    height:22rem;
+    text-align:center;
+    color:white;
+    grid-template-areas: 'cl cl div mul'
+                'seven eight nine sub'
+                'four five six add'
+                'one two three add'
+                'zero dozero dec equal';
+    gap:8px;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.cl{
+    grid-area:cl;
+    background-color: rgb(242, 12, 50);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div{
+    grid-area: div;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mul{
+    grid-area: mul;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seven{
+    grid-area: seven;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eight{
+    grid-area: eight;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nine{
+    grid-area:nine;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub{
+    grid-area:sub;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four{
+    grid-area: four;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.five{
+    grid-area: five;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.six{
+    grid-area: six;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add{
+    grid-area: add;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    grid-area: one;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two{
+    grid-area: two;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three{
+    grid-area: three;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zero{
+    grid-area: zero;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dozero{
+    grid-area: dozero;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dec{
+    grid-area: dec;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.equal{
+    grid-area: equal;
+    background-color: #0a9ef9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tab div:hover{
+    transform: scale(1.04);
+    transition: all .5s;
+    box-shadow:2px 2px rgb(209, 228, 6);
+
+}
+
+@media screen and (max-width: 1300px) {
+    .container{
+      width:40%;
+    }
+    h1{
+        font-size:40px;
+        margin-bottom: 10px;
+    }
+    .display{
+        font-size:25px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .container{
+      width:50%;
+    }
+    h1{
+        font-size:40px;
+        margin-bottom: 10px;
+    }
+    .display{
+        font-size:25px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .container{
+      width:80%;
+    }
+    h1{
+        font-size:30px;
+        margin-bottom: 10px;
+    }
+    .display{
+        font-size:25px;
+    }
+  }
